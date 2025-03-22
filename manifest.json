@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Drink Water Reminder",
+  "version": "1.0",
+  "description": "A Chrome extension that reminds you to drink water at regular intervals",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications",
+    "tts"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  }
+} 
